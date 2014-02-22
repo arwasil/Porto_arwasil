@@ -1,0 +1,393 @@
+/*Font & Icon
+==========================*/
+
+@font-face {
+	font-family: 'Conv_brandon_light-webfont';
+	src: url('../fonts/brandon_light-webfont.eot');
+	src: url('../fonts/brandon_light-webfont.woff') format('woff'), url('../fonts/brandon_light-webfont.ttf') format('truetype'), url('../fonts/brandon_light-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-lzjcw7');
+	src:url('../fonts/icomoon.eot?#iefix-lzjcw7') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-lzjcw7') format('woff'),
+		url('../fonts/icomoon.ttf?-lzjcw7') format('truetype'),
+		url('../fonts/icomoon.svg?-lzjcw7#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+	content: "\e600";
+	font-size: 1.9em;
+	color: #ec6f66;
+}
+
+	.icon-arrow-down:hover:before {
+		content: '\e600';
+		color: #933a33;
+	}
+
+
+
+/*Typography
+==========================*/
+body{
+	font-family: 'Conv_brandon_light-webfont', sans-serif;
+}
+
+h1,h2,h3,h4{
+	font-family: 'Conv_brandon_light-webfont', sans-serif;
+}
+
+h1{
+	font-weight: 900;
+}
+
+.nav li a{
+	font-size: 1.2em;
+	color: #504a46;
+}
+
+.logo{
+	font-weight: 900;
+}
+
+.jumbotron h1{
+	font-size: 2.3em;
+	letter-spacing: .03em;
+	color: #49433f;
+}
+.jumbotron h2{
+	font-size: 1.5em;
+	font-weight: 900;
+	letter-spacing: .03em;
+	color: #49433f;
+}
+
+
+.job{
+	color: white;
+}
+
+.job h2{
+		font-size: 1.8em;
+		font-weight: 900;
+		color: white;
+		text-transform: uppercase;
+		line-height: 1.4em;
+	}
+
+.job .btn{
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	margin-bottom: 50px;
+	text-shadow:0 1px 0 rgba(184,52,52,1);
+	box-shadow: 0 1px 0 rgba(184,52,52,1);
+}
+
+
+/*Layout 
+==========================*/
+
+a:hover{
+	text-decoration: none;
+}
+
+.container{
+	max-width: 1000px;
+}
+
+.navbar{
+	background-color: #f3f0f0;
+	margin-bottom: 0;
+	border-right: none;
+	border-left: none;
+}
+
+.nav li a{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.logo{
+	padding-top: 10px;
+	/*background: red;*/
+}
+
+.jumbotron.intro{
+	background-color: #f3f0f0;
+}
+
+	.intro{
+		padding-top: 200px;
+		margin-bottom: 0;
+	}
+
+	.col-sm-6{
+		/*background: red;*/
+	}
+
+	.c-align{
+		text-align: center;
+	}
+
+	.circle{
+		display:inline-block;
+		border-radius: 50%;
+		background: white;
+		margin-bottom: 30px;
+	}
+
+	.pic{
+		display: inline-block;
+		border-radius: 50%;
+		width: 200px;
+		height: 200px;
+		background: white;
+		margin-top: 10px;
+		background-image: url(../img/picture-1.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.text-intro{
+		margin-top: 20px;	
+	}
+
+
+.arrow{
+	text-align: center;
+	/*background: red;*/
+	margin-top: 200px;
+}
+
+
+/*Job
+------------------------*/
+.jumbotron.job{
+	background-color: #ec6f66;
+	overflow: hidden;
+	height: 750px;
+	margin-bottom: 0;
+}
+
+	.job .left{
+		/*background: red;*/
+		padding: 0;
+		padding-top: 200px;
+		text-align: center;
+
+	}
+		.left h2{
+			/*background: green;*/
+			padding: 0;
+			width: 100%;
+		}
+
+		.job .btn{
+			background: none;
+			border: 3px solid rgba(255,255,255,.5);
+			border-radius: 1px;
+
+			margin-top: 50px;
+		}
+
+			.job .btn:hover{
+				border: 3px solid white;
+			}
+
+	.job .right{
+		/*background: white;*/
+	}
+		.job .right img{
+			width: 130%;
+			height: 100%;
+			/*position: relative;*/
+			/*top: 10px;*/
+
+			box-shadow: -10px 30px 5px 1px rgba(0,0,0,.2);
+		}
+
+
+/*Process
+------------------------*/
+.jumbotron.process{
+	background-color: #f3f0f0;
+	margin-bottom: 0;
+}
+
+.sub-title{
+	font-size: 1.5em;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	text-align: center;
+
+	margin-bottom: 100px;
+}
+
+.icon{
+	padding:30px 0 20px 0;
+}
+	.icon_desc{
+		line-height: 1.5em;
+		font-size: .9em;
+		margin: 20px 0 80px 0;
+		/*color: red;*/
+	}
+
+.circle.icon_proc{
+	width: 150px;
+	height: 150px;
+}
+
+
+/*Project
+------------------------*/
+.jumbotron.project{
+	background-color: lightblue;
+	margin-bottom: 0;
+	padding-bottom: 140px;
+}
+
+
+/*Skill
+------------------------*/
+.jumbotron.skill{
+	background-color: lightgreen;
+	margin-bottom: 0;
+	padding-bottom: 140px;
+}
+	.s_icon{
+		text-align: center;
+	}
+
+	.skill .icon_proc{
+		width: 100px;
+		height: 100px;
+		margin-right: 10px;
+		background: yellow;
+	}
+
+
+
+
+/*Media Queries
+==========================*/
+
+@media(max-width: 1272px){
+	.job .right img{
+		position: relative;
+		top:50px;
+
+		box-shadow: -10px 10px 5px 1px rgba(0,0,0,.2);
+	}
+}
+
+@media (max-width: 767px){
+
+	.pic{
+		margin-top: -120px;
+	}
+
+	.text-intro{
+		text-align: center;
+		margin-top: 80px;
+	}
+
+	.arrow{
+		margin-top :100px;
+	}
+
+	.job .left{
+		padding-top: 90px;
+	}
+	.job .right{
+		/*background: white;*/
+
+	}
+	.job .right img{
+		width: 100%;
+		/*height: 10%;*/
+	}
+
+	.circle{
+		margin-bottom: 0;
+	}
+}
+
+@media(max-width:425px){
+	.nav{
+		visibility: hidden;
+	}
+	.logo{
+		position: absolute;
+	}
+
+	.job .left{
+		padding-top: 50px;
+	}
+}
+
+@media(max-width: 385px){
+
+	.jumbotron.intro{
+		padding: 150px 0 0 0 ;
+	}
+	.pic{
+		width: 130px;
+		height: 130px;
+	}
+	.text-intro h1{
+		font-size: 1.4em;
+		margin-top: -50px;
+	}
+	.text-intro h2{
+		font-size: .9em;
+	}
+	.arrow{
+		margin-top: 30px;
+	}
+
+	.jumbotron.job{
+		height: 500px;
+	}
+
+	.jumbotron.process{
+		padding: 0;
+	}
+		.sub-title{
+			font-size: 1em;
+			letter-spacing: .04em;
+			margin-bottom: 50px;
+		}
+
+	.jumbotron.project{
+		padding: 0;
+	}
+
+
+
+}
+
+
+
+
