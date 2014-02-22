@@ -163,10 +163,18 @@ a:hover{
 		height: 200px;
 		background: white;
 		margin-top: 10px;
-		background-image: url(../img/picture-1.png);
+		background-image: url(../img/pic.png);
 		background-repeat: no-repeat;
+		background-position: -214px 10px;
 		background-size: cover;
+		background-color: #f3f0f0;
+		border: 5px solid #7d7d7d;
+
+
 	}
+		.pic:hover{
+			background-position: 0 10px;
+		}
 
 	.text-intro{
 		margin-top: 20px;	
@@ -347,7 +355,7 @@ a:hover{
 	}
 }
 
-@media(max-width: 385px){
+@media(max-width: 400px){
 
 	.jumbotron.intro{
 		padding: 150px 0 0 0 ;
@@ -355,6 +363,7 @@ a:hover{
 	.pic{
 		width: 130px;
 		height: 130px;
+		background-position: -135px 10px;
 	}
 	.text-intro h1{
 		font-size: 1.4em;
