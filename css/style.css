@@ -226,13 +226,14 @@ a:hover{
 		/*background: white;*/
 	}
 		.job .right img{
-			width: 130%;
+			width: 120%;
 			height: 100%;
-			/*position: relative;*/
-			/*top: 10px;*/
-
-			box-shadow: -10px 30px 5px 1px rgba(0,0,0,.2);
+			border-radius: 5px;
+			box-shadow: -10px 30px 2px 1px rgba(189,102,96,.6);
+			-webkit-animation : browser 3s ease-in-out 0s infinite  alternate none;
 		}
+
+
 
 
 /*Process
@@ -265,7 +266,19 @@ a:hover{
 .circle.icon_proc{
 	width: 150px;
 	height: 150px;
+	background-image: url('../img/icon_pic.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -3px 0px;
+	background-color: none;
 }
+
+	.icon_proc.create{
+		background-position: -192px 0px;
+	}
+	.icon_proc.execute{
+		background-position: -379px 0px;
+	}
 
 
 /*Project
@@ -296,17 +309,32 @@ a:hover{
 	}
 
 
+/*Animation
+==========================*/
+@-webkit-keyframes browser{
+  100%{-webkit-transform: translate(0px, 10px);
+        }
+  50%{-webkit-transform: translate(0px, 0px);
+        }
+  0%{-webkit-transform: translate(0px, 10px);
+        }
+}
+
 
 
 /*Media Queries
 ==========================*/
 
-@media(max-width: 1272px){
+@media(min-width: 1272px){
 	.job .right img{
 		position: relative;
 		top:50px;
 
+
 		box-shadow: -10px 10px 5px 1px rgba(0,0,0,.2);
+	}
+	.job .left h2{
+		font-size: 2.3em;
 	}
 }
 
@@ -379,6 +407,9 @@ a:hover{
 	.jumbotron.job{
 		height: 500px;
 	}
+		.job .right img{
+			box-shadow: -7px 20px 2px 1px rgba(189,102,96,.6);
+		}
 
 	.jumbotron.process{
 		padding: 0;
